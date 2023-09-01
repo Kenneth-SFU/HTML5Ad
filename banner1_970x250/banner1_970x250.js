@@ -305,14 +305,14 @@ if (reversed == null) { reversed = false; }
 
 	// CTA
 	this.instance = new lib.btn_CTA();
-	this.instance.setTransform(793.65,208.95,1,1,0,0,0,83,25.5);
+	this.instance.setTransform(793.65,222.95,1,1,0,0,0,83,25.5);
 	this.instance._off = true;
 	var instanceFilter_1 = new cjs.ColorFilter(1,1,1,1,0,0,0,0);
 	this.instance.filters = [instanceFilter_1];
 	this.instance.cache(-3,-3,172,57);
 	new cjs.ButtonHelper(this.instance, 0, 1, 2, false, new lib.btn_CTA(), 3);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(184).to({_off:false},0).to({y:198.95},16,cjs.Ease.get(0.9)).wait(77).to({mode:"single",startPosition:0},0).wait(15));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(184).to({_off:false},0).to({y:212.95},16,cjs.Ease.get(0.9)).wait(92));
 	this.timeline.addTween(cjs.Tween.get(instanceFilter_1).wait(184).to(new cjs.ColorFilter(0,0,0,1,255,255,255,0), 0).to(new cjs.ColorFilter(1,1,1,1,0,0,0,0), 16,cjs.Ease.get(0.9)).wait(92));
 
 	// Mask (mask)
@@ -686,8 +686,7 @@ if (reversed == null) { reversed = false; }
 	this.filterCacheList.push({instance: this.instance, startFrame:184, endFrame:184, x:-3, y:-3, w:172, h:57});
 	this.filterCacheList.push({instance: this.instance, startFrame:0, endFrame:0, x:-3, y:-3, w:172, h:57});
 	this.filterCacheList.push({instance: this.instance, startFrame:185, endFrame:200, x:-3, y:-3, w:172, h:57});
-	this.filterCacheList.push({instance: this.instance, startFrame:201, endFrame:277, x:-3, y:-3, w:172, h:57});
-	this.filterCacheList.push({instance: this.instance, startFrame:277, endFrame:292, x:-3, y:-3, w:172, h:57});
+	this.filterCacheList.push({instance: this.instance, startFrame:200, endFrame:292, x:-3, y:-3, w:172, h:57});
 	this.filterCacheList.push({instance: this.instance_3, startFrame:115, endFrame:115, x:-2, y:-2, w:974, h:255});
 	this.filterCacheList.push({instance: this.instance_3, startFrame:0, endFrame:0, x:-2, y:-2, w:974, h:255});
 	this.filterCacheList.push({instance: this.instance_3, startFrame:116, endFrame:139, x:-2, y:-2, w:974, h:255});
