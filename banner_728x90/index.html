@@ -13,6 +13,8 @@
 <meta name="authoring-tool" content="Adobe_Animate_CC">
 <title>banner_728x90</title>
 <!-- write your code here -->
+<meta name="ad.size" content="width=728,height=90">
+<script type="text/javascript">var clickTag = "https://www.sfu.ca"; </script>
 <style>
   #animation_container {
 	position:absolute;
@@ -22,7 +24,7 @@
   }
 </style>
 <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-<script src="banner_728x90.js?1694724484174"></script>
+<script src="banner_728x90.js"></script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
@@ -70,7 +72,9 @@ function handleComplete(evt,comp) {
 </head>
 <body onload="init();" style="margin:0px;">
 	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:728px; height:90px">
+        <a href="javascript:window.open(window.clickTag)">
 		<canvas id="canvas" width="728" height="90" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+        </a>
 		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:728px; height:90px; position: absolute; left: 0px; top: 0px; display: block;">
 		</div>
 	</div>
