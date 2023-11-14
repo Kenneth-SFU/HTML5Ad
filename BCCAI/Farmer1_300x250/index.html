@@ -52,7 +52,7 @@ function handleComplete(evt,comp) {
 	for(i=0; i<ssMetadata.length; i++) {
 		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
 	}
-	exportRoot = new lib.Farmer2_300x250();
+	exportRoot = new lib.Farmer_300x250();
 	exportRoot.addEventListener("tick", AdobeAn.handleFilterCache);
 	stage = new lib.Stage(canvas);
 	stage.enableMouseOver();	
