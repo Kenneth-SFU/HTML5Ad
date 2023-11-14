@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_1", frames: [[333,396,334,195],[0,0,530,184],[333,252,505,142],[669,396,281,229],[0,438,260,56],[0,496,260,56],[0,554,260,56],[0,186,331,250],[532,0,344,250]]}
+		{name:"index_atlas_1", frames: [[635,252,334,195],[0,0,530,184],[0,504,505,142],[635,449,281,229],[0,438,260,56],[0,648,260,56],[262,648,260,56],[0,186,331,250],[532,0,344,250],[333,252,300,250]]}
 ];
 
 
@@ -86,6 +86,13 @@ lib.ssMetadata = [
 (lib.Bitmap14 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(8);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.Bitmap15 = function() {
+	this.initialize(ss["index_atlas_1"]);
+	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
@@ -203,18 +210,25 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Project_Support
-	this.instance = new lib.Bitmap12copy();
-	this.instance.setTransform(-30,1);
+	this.shape = new cjs.Shape();
+	var sprImg_shape = cjs.SpriteSheetUtils.extractFrame(ss["index_atlas_1"],9);
+	sprImg_shape.onload = function(){
+		this.shape.graphics.bf(sprImg_shape, null, new cjs.Matrix2D(-1,0,0,1,57.5,-203)).s().p("AmoHWIAAurINRAAIAAOrg")
+	}.bind(this);
+	this.shape.setTransform(48,203,1.1648,1,0,0,0,42.5,0);
 
-	this.instance_1 = new lib.Bitmap12copy();
-	this.instance_1.setTransform(-66,-12,1.05,1.05);
+	this.instance = new lib.Bitmap15();
+	this.instance.setTransform(43,0);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(1));
+	this.instance_1 = new lib.Bitmap15();
+	this.instance_1.setTransform(66,0,1,1,0,0,180);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance},{t:this.shape}]}).to({state:[]},1).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-66,-12,367,263);
+p.nominalBounds = new cjs.Rectangle(-234,0,577,250);
 
 
 (lib.g_pic00 = function(mode,startPosition,loop,reversed) {
@@ -716,12 +730,12 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.shape_40}]},139).to({state:[{t:this.shape_41}]},1).to({state:[{t:this.shape_42}]},1).to({state:[{t:this.shape_43}]},1).to({state:[{t:this.shape_44}]},1).to({state:[{t:this.shape_45}]},1).to({state:[{t:this.shape_46}]},1).to({state:[{t:this.shape_47}]},1).to({state:[{t:this.shape_48}]},1).to({state:[{t:this.shape_49,p:{x:76.775}}]},1).to({state:[{t:this.shape_50}]},1).to({state:[{t:this.shape_51}]},1).to({state:[{t:this.shape_52}]},1).to({state:[{t:this.shape_53}]},1).to({state:[{t:this.shape_54}]},1).to({state:[{t:this.shape_55}]},1).to({state:[{t:this.shape_56}]},1).to({state:[{t:this.shape_57}]},1).to({state:[{t:this.shape_58}]},1).to({state:[{t:this.shape_59}]},1).to({state:[{t:this.shape_60}]},1).to({state:[{t:this.shape_61}]},1).to({state:[{t:this.shape_62}]},1).to({state:[{t:this.shape_63}]},1).to({state:[{t:this.shape_63}]},69).to({state:[{t:this.shape_64}]},1).to({state:[{t:this.shape_65}]},1).to({state:[{t:this.shape_66}]},1).to({state:[{t:this.shape_67}]},1).to({state:[{t:this.shape_49,p:{x:76.75}}]},1).to({state:[{t:this.shape_68}]},1).to({state:[{t:this.shape_69}]},1).to({state:[{t:this.shape_70}]},1).to({state:[{t:this.shape_71}]},1).to({state:[{t:this.shape_72}]},1).to({state:[{t:this.shape_73}]},1).to({state:[{t:this.shape_74}]},1).to({state:[{t:this.shape_75}]},1).to({state:[{t:this.shape_76}]},1).to({state:[{t:this.shape_77}]},1).to({state:[{t:this.shape_78}]},1).to({state:[{t:this.shape_79}]},1).to({state:[{t:this.shape_80}]},1).to({state:[{t:this.shape_40}]},1).to({state:[]},1).wait(135));
 
 	// Photo_4
-	this.instance_4 = new lib.g_pic04("synched",0);
+	this.instance_4 = new lib.g_pic04("single",0);
 	this.instance_4.setTransform(10,0);
 	this.instance_4._off = true;
 	var instance_4Filter_5 = new cjs.ColorFilter(1,1,1,1,0,0,0,0);
 	this.instance_4.filters = [instance_4Filter_5];
-	this.instance_4.cache(-68,-14,371,267);
+	this.instance_4.cache(-236,-2,581,254);
 
 	var maskedShapeInstanceList = [this.instance_4];
 
@@ -729,7 +743,7 @@ if (reversed == null) { reversed = false; }
 		maskedShapeInstanceList[shapedInstanceItr].mask = mask;
 	}
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(118).to({_off:false},0).to({x:54},20,cjs.Ease.get(0.8)).to({_off:true},247).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(118).to({_off:false},0).to({x:0},20,cjs.Ease.get(0.8)).to({_off:true},247).wait(1));
 	this.timeline.addTween(cjs.Tween.get(instance_4Filter_5).wait(118).to(new cjs.ColorFilter(1,1,1,1,255,255,255,0), 0).to(new cjs.ColorFilter(1,1,1,1,0,0,0,0), 20,cjs.Ease.get(0.8)).wait(1));
 
 	// Text_1
@@ -940,9 +954,11 @@ if (reversed == null) { reversed = false; }
 	this.filterCacheList.push({instance: this.instance_3, startFrame:149, endFrame:162, x:-2, y:-2, w:269, h:96});
 	this.filterCacheList.push({instance: this.instance_3, startFrame:222, endFrame:222, x:-2, y:-2, w:269, h:96});
 	this.filterCacheList.push({instance: this.instance_3, startFrame:223, endFrame:238, x:-2, y:-2, w:269, h:96});
-	this.filterCacheList.push({instance: this.instance_4, startFrame:118, endFrame:118, x:-68, y:-14, w:371, h:267});
-	this.filterCacheList.push({instance: this.instance_4, startFrame:0, endFrame:0, x:-68, y:-14, w:371, h:267});
-	this.filterCacheList.push({instance: this.instance_4, startFrame:119, endFrame:138, x:-68, y:-14, w:371, h:267});
+	this.filterCacheList.push({instance: this.instance_4, startFrame:118, endFrame:118, x:-236, y:-2, w:581, h:254});
+	this.filterCacheList.push({instance: this.instance_4, startFrame:0, endFrame:0, x:-236, y:-2, w:581, h:254});
+	this.filterCacheList.push({instance: this.instance_4, startFrame:119, endFrame:138, x:-236, y:-2, w:581, h:254});
+	this.filterCacheList.push({instance: this.instance_4, startFrame:139, endFrame:385, x:-236, y:-2, w:581, h:254});
+	this.filterCacheList.push({instance: this.instance_4, startFrame:385, endFrame:386, x:-236, y:-2, w:581, h:254});
 	this.filterCacheList.push({instance: this.instance_5, startFrame:32, endFrame:32, x:-2, y:-2, w:257, h:75});
 	this.filterCacheList.push({instance: this.instance_5, startFrame:0, endFrame:0, x:-2, y:-2, w:257, h:75});
 	this.filterCacheList.push({instance: this.instance_5, startFrame:33, endFrame:51, x:-2, y:-2, w:257, h:75});
