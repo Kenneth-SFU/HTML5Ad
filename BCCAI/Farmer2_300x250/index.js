@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_1", frames: [[0,0,507,172],[0,504,580,120],[604,252,281,229],[0,426,260,56],[604,483,260,56],[582,541,260,56],[509,0,300,250],[0,174,300,250],[302,252,300,250]]}
+		{name:"index_atlas_1", frames: [[0,0,507,172],[302,252,580,120],[302,374,281,229],[0,426,260,56],[0,484,260,56],[0,542,260,56],[509,0,300,250],[0,174,300,250]]}
 ];
 
 
@@ -27,65 +27,58 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedBmp_17 = function() {
+(lib.CachedBmp_18 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_5 = function() {
+(lib.CachedBmp_19 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_4 = function() {
+(lib.CachedBmp_16 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_3 = function() {
+(lib.CachedBmp_15 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_2 = function() {
+(lib.CachedBmp_14 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_1 = function() {
+(lib.CachedBmp_13 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Bitmap12 = function() {
+(lib.Bitmap13 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Bitmap13 = function() {
-	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(7);
-}).prototype = p = new cjs.Sprite();
-
-
-
 (lib.Bitmap8copy = function() {
 	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(8);
+	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
@@ -102,7 +95,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Text
-	this.instance = new lib.CachedBmp_17();
+	this.instance = new lib.CachedBmp_18();
 	this.instance.setTransform(0,0,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
@@ -125,7 +118,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Text
-	this.instance = new lib.CachedBmp_5();
+	this.instance = new lib.CachedBmp_19();
 	this.instance.setTransform(0,0,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
@@ -148,7 +141,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// FlashAICB
-	this.instance = new lib.CachedBmp_4();
+	this.instance = new lib.CachedBmp_16();
 	this.instance.setTransform(-4.2,0,0.5,0.5);
 	this.instance._off = true;
 
@@ -204,7 +197,7 @@ if (reversed == null) { reversed = false; }
 	// Layer_2
 	this.instance = new lib.Bitmap8copy();
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({_off:true},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	this._renderFirstFrame();
 
@@ -224,13 +217,13 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// TEXT
-	this.instance = new lib.CachedBmp_1();
+	this.instance = new lib.CachedBmp_13();
 	this.instance.setTransform(0,1.5,0.5,0.5);
 
-	this.instance_1 = new lib.CachedBmp_2();
+	this.instance_1 = new lib.CachedBmp_14();
 	this.instance_1.setTransform(0,1.5,0.5,0.5);
 
-	this.instance_2 = new lib.CachedBmp_3();
+	this.instance_2 = new lib.CachedBmp_15();
 	this.instance_2.setTransform(0,1.5,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[]},1).wait(2));
@@ -923,8 +916,6 @@ if (reversed == null) { reversed = false; }
 	this.filterCacheList.push({instance: this.instance_4, startFrame:109, endFrame:122, x:-2, y:-2, w:294, h:64});
 	this.filterCacheList.push({instance: this.instance_5, startFrame:1, endFrame:23, x:-2, y:-2, w:304, h:254});
 	this.filterCacheList.push({instance: this.instance_5, startFrame:0, endFrame:0, x:-2, y:-2, w:304, h:254});
-	this.filterCacheList.push({instance: this.instance_5, startFrame:24, endFrame:128, x:-2, y:-2, w:304, h:254});
-	this.filterCacheList.push({instance: this.instance_5, startFrame:128, endFrame:346, x:-2, y:-2, w:304, h:254});
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
