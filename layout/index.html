@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<style>
+    body { font-family: sans-serif; font-size: 14px;}
+    .size-control {
+        resize: horizontal;
+        overflow: auto;
+        position: relative;
+        
+        margin: 50px auto;
+        max-width: 100%;
+        min-width: 300px;
+
+        /*  outline: solid 1px grey;
+            outline-offset: 5px;
+        /*  background-color: #efefef;  */
+    }
+    .size-control::after { content:attr(style);}
+    hr { border: 1px solid #eeeeee;}
+    .panel{
+        container-type: inline-size;
+        container-name: panel;
+        resize: horizontal;
+        overflow: auto;
+        max-width:100%;
+        min-width: 300px;
+        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: flex-start;
+        margin-top: 30px;
+    }
+    .last-first .col:last-child { order:-1;}
+    
+    .panel.padding .col{ margin-right: 30px; margin-bottom: 30px;} .panel.padding .col:last-child{ margin-right: 0;}
+    .has-2-col .col { width: 50%;}      .padding.has-2-col .col { width:calc(50% - 15px); }
+    .has-3-col .col { width: 33.3%;}    .padding.has-3-col .col { width:calc(33.3% - 20px); }
+    .has-4-col .col { width: 25%;}      .padding.has-4-col .col { width:calc(25% - 22.5px); }
+    
+    .w1-1-2.padding.has-3-col .col { width:calc(25% - 20px);} .w1-1-2.padding.has-3-col .col:nth-child(3) { width:calc(50% - 20px); } 
+    .w2-1-1.padding.has-3-col .col { width:calc(25% - 20px);} .w2-1-1.padding.has-3-col .col:nth-child(1) { width:calc(50% - 20px); } 
+    
+    .col{ text-align: center; padding: 20px 0; position: relative; /* transition: margin 0.3s ease-out;*/ }
+    /* 290px marker */
+    .col:before { content:"290px ."; border-right: 1px solid #aaa; border-top: 1px solid #aaa; position:absolute; left: 0; top: 0;width: 290px; height:13px; text-align: right; font-size: 10px; color: #888;}
+    
+    .col:nth-child(1) {background-color:#eee;}
+    .col:nth-child(2) {background-color:#ddd;}
+    .col:nth-child(3) {background-color:#ccc;}
+    .col:nth-child(4) {background-color:#bbb;}
+    
+    .col .col:nth-child(1) {background-color:antiquewhite}
+    .col .col:nth-child(2) {background-color:beige;}
+    .col .col:nth-child(3) {background-color:azure;}
+    .col .col:nth-child(4) {background-color:beige;}
+    
+    /* No padding */
+    /* .has-3-col .col { width: 50%; } */
+    /* .has-2-col .col { width: 100%; } */
+    /* .has-4-col .col { width: 50%; } */
+    
+    @container panel (max-width: 1250px) { /* 50 [ 290 ] 30 [ 290 ] 30 [ 290 ] 30 [ 290 ] 50  = 1350 */        
+        .padding.has-4-col .col { width:calc(50% - 15px); } .padding.has-4-col .col:nth-child(even) {margin-right: 0; }
+        
+        .w1-1-2.padding.has-3-col .col { width:calc(50% - 15px); } .w1-1-2.padding.has-3-col .col:nth-child(3) { width:100%; } 
+        .w1-1-2.padding.has-3-col .col:nth-child(1n+2) { margin-right: 0;}
+        
+        .w2-1-1.padding.has-3-col .col { width:calc(50% - 15px);}
+        .w2-1-1.padding.has-3-col .col:nth-child(1) { width:100%; margin-right: 0;}        
+    }
+    
+    @container panel (max-width: 930px) { /* 50 [ 290 ] 30 [ 290 ] 30 [ 290 ] 50  = 1030  */                        
+        .padding.has-3-col .col { width:calc(50% - 15px); } .padding.has-3-col:not(.w2-1-1) .col:nth-child(even) {margin-right: 0; }        
+    }
+    
+    @container panel (max-width: 610px) { /* 50 [ 290 ] 30 [ 290 ] 50  = 710 */
+        .padding.has-2-col .col { width: 100%; }            .padding.has-2-col .col {margin-right:0;}
+        .padding.has-3-col .col { width: 100%; }            .padding.has-3-col .col {margin-right:0;}
+        .padding.has-4-col .col { width: 100%; }            .padding.has-4-col .col {margin-right:0;}
+        
+        .w1-1-2.padding.has-3-col .col { width:100%; margin-right: 0; }
+        .w2-1-1.padding.has-3-col .col { width:100%; margin-right: 0; }
+    }
+    
+    /* Marker / Ruler */
+    #break1, #break2, #break3 { position: absolute; left: 0; margin: 0;  height: 35px; border-right: 1px solid red; border-left: 1px solid #999; text-align: right; }
+    #marker { width:100% ; height: 20px;  position: fixed; z-index: 999; background: #efefef; top: 0;}
+    #break1 { width: calc(1250px - 1px);}
+    #break2 { width: calc(930px - 1px);}
+    #break3 { width: calc(610px - 1px);}
+  
+</style>
+    
+</head>
+<body>
+
+    <div class="size-control" style="width:1440px;">
+        <div id="marker">
+            <div id="break1">1250px &nbsp;</div>
+            <div id="break2">930px &nbsp;</div>
+            <div id="break3">610px &nbsp;</div>
+        </div>        
+        <h4>2 col</h4>
+        <div class="panel padding has-2-col">
+            <div class="col">1 col<br>1 col</div>
+            <div class="col">2 col<br>2 col</div>
+        </div>
+        <hr>
+        <h4>3 col &nbsp; (930?)</h4>
+        <div class="panel padding has-3-col">
+            <div class="col">1 col<br>1 col</div>
+            <div class="col">2 col<br>2 col</div>
+            <div class="col">3 col<br>3 col</div>
+        </div>
+        <hr>
+        <h4>4 col</h4>
+        <div class="panel padding has-4-col">
+            <div class="col">1 col<br>1 col</div>
+            <div class="col">2 col<br>2 col</div>
+            <div class="col">3 col<br>3 col</div>
+            <div class="col">4 col<br>4 col</div>
+        </div>
+        <hr>
+        <h4>3 col 25 25 50</h4>
+        <div class="panel padding has-3-col w1-1-2">
+            <div class="col">1 col-25%<br>1 col</div>
+            <div class="col">2 col-25%<br>2 col</div>
+            <div class="col">3 col-50%<br>3 col</div>
+        </div>
+        <hr>
+        <h4>3 col 50 25 25</h4>
+        <div class="panel padding has-3-col w2-1-1">
+            <div class="col">1 col-50%<br>1 col</div>
+            <div class="col">2 col-25%<br>2 col</div>
+            <div class="col">3 col-25%<br>3 col</div>
+        </div>
+        <hr>
+        <h4>2 col nested 2 col</h4>
+        <div class="panel padding has-2-col">
+            <div class="col">
+                1 col
+                <div class="panel padding has-2-col">
+                    <div class="col">1 col<br>1 col</div>
+                    <div class="col">2 col<br>2 col</div>
+                </div>
+        
+            </div>
+            <div class="col">
+                2 col
+                <div class="panel padding has-2-col">
+                    <div class="col">1 col<br>1 col</div>
+                    <div class="col">2 col<br>2 col</div>
+                </div>
+                
+            </div>
+        </div>
+        <hr>
+    </div>
+
+</body>
+</html>
