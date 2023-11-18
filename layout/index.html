@@ -42,6 +42,8 @@
     .has-3-col .col { width: 33.3%;}    .padding.has-3-col .col { width:calc(33.3% - 20px); }
     .has-4-col .col { width: 25%;}      .padding.has-4-col .col { width:calc(25% - 22.5px); }
     
+    .w1-2.padding.has-2-col .col { width:calc(33.3% - 15px); } .w1-2.padding.has-2-col .col:last-child { width:calc(66.6% - 15px); } 
+    
     .w1-1-2.padding.has-3-col .col { width:calc(25% - 20px);} .w1-1-2.padding.has-3-col .col:nth-child(3) { width:calc(50% - 20px); } 
     .w2-1-1.padding.has-3-col .col { width:calc(25% - 20px);} .w2-1-1.padding.has-3-col .col:nth-child(1) { width:calc(50% - 20px); } 
     
@@ -75,6 +77,8 @@
     }
     
     @container panel (max-width: 930px) { /* 50 [ 290 ] 30 [ 290 ] 30 [ 290 ] 50  = 1030  */                        
+        .w1-2.padding.has-2-col .col, .w1-2.padding.has-2-col .col:last-child { width:100%;  margin-right: 0;} 
+        
         .padding.has-3-col .col { width:calc(50% - 15px); } .padding.has-3-col:not(.w2-1-1) .col:nth-child(even) {margin-right: 0; }        
     }
     
@@ -107,6 +111,12 @@
         </div>        
         <h4>2 col</h4>
         <div class="panel padding has-2-col">
+            <div class="col">1 col<br>1 col</div>
+            <div class="col">2 col<br>2 col</div>
+        </div>
+        <hr>
+        <h4>2 col 33,66%</h4>
+        <div class="panel padding has-2-col w1-2">
             <div class="col">1 col<br>1 col</div>
             <div class="col">2 col<br>2 col</div>
         </div>
