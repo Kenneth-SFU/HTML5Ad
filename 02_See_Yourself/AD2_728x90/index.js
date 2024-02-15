@@ -499,7 +499,7 @@ if (reversed == null) { reversed = false; }
 
 	// Text_01___AD2
 	this.instance_4 = new lib.g_txt01AD2("synched",0);
-	this.instance_4.setTransform(797.45,48.75,1,1,0,0,0,-66.5,28);
+	this.instance_4.setTransform(797.45,58.75,1,1,0,0,0,-66.5,28);
 	this.instance_4._off = true;
 
 	var maskedShapeInstanceList = [this.instance_4];

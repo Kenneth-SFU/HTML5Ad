@@ -506,7 +506,7 @@ if (reversed == null) { reversed = false; }
 
 	// Text_01___AD1
 	this.instance_4 = new lib.g_txt01AD1("single",0);
-	this.instance_4.setTransform(647.45,44,1,1,0,0,0,-66.5,28);
+	this.instance_4.setTransform(647.45,54,1,1,0,0,0,-66.5,28);
 	this.instance_4._off = true;
 
 	var maskedShapeInstanceList = [this.instance_4];
