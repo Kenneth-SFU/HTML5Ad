@@ -276,6 +276,13 @@ if (reversed == null) { reversed = false; }
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(1));
 
+	// Halo
+	this.shape = new cjs.Shape();
+	this.shape.graphics.rf(["rgba(0,0,0,0.6)","rgba(0,0,0,0)"],[0,0.953],-77.9,51.9,0,-77.9,51.9,169.1).s().p("A2zOEIAA8BQB2gGB7AAQRWAAMPIOQMDIGAOLZIAAAag");
+	this.shape.setTransform(145.975,160.1);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
 	// Photo
 	this.instance_2 = new lib.Pic2();
 
@@ -284,7 +291,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,0,300,250);
+p.nominalBounds = new cjs.Rectangle(0,0,300,250.1);
 
 
 // stage content:
@@ -505,7 +512,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(-25,125,335,125);
+p.nominalBounds = new cjs.Rectangle(-25,125,335,125.1);
 // library properties:
 lib.properties = {
 	id: 'C38F8E925B074A239B4A15BB5DD6BAC8',

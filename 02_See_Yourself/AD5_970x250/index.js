@@ -27,7 +27,7 @@ lib.ssMetadata = [
 
 
 
-(lib.Bitmap11 = function() {
+(lib.Pic6 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
@@ -284,7 +284,7 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
 
 	// Photo
-	this.instance_2 = new lib.Bitmap11();
+	this.instance_2 = new lib.Pic6();
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(1));
 
