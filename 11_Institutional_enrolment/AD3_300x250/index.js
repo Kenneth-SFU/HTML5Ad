@@ -27,7 +27,7 @@ lib.ssMetadata = [
 
 
 
-(lib.Pic3 = function() {
+(lib.Pic3new = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
@@ -295,8 +295,72 @@ if (reversed == null) { reversed = false; }
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(1));
 
-	// Photo
-	this.instance_2 = new lib.Pic3();
+	// Mask (mask)
+	var mask = new cjs.Shape();
+	mask._off = true;
+	mask.graphics.p("A3bTiMAAAgnDMAu3AAAMAAAAnDg");
+	mask.setTransform(150,125);
+
+	// Gradient_Top
+	this.shape = new cjs.Shape();
+	this.shape.graphics.rf(["rgba(0,0,0,0.6)","rgba(0,0,0,0)"],[0.125,0.953],0,-0.1,0,0,-0.1,112.9).s().p("AtdNeQlmlkAAn6QAAn5FmllQFlllH4AAQH6AAFlFlQFlFlAAH5QAAH6llFkQllFmn6AAQn4AAlllmg");
+	this.shape.setTransform(65.525,2.675);
+
+	var maskedShapeInstanceList = [this.shape];
+
+	for(var shapedInstanceItr = 0; shapedInstanceItr < maskedShapeInstanceList.length; shapedInstanceItr++) {
+		maskedShapeInstanceList[shapedInstanceItr].mask = mask;
+	}
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	// Gradient
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.rf(["rgba(0,0,0,0.498)","rgba(0,0,0,0)"],[0,0.882],0,0,0,0,0,110.6).s().p("At6NNQlxldAAnwQAAnvFxleQFxldIJAAQIKAAFxFdQFxFeAAHvQAAHwlxFdQlxFeoKAAQoJAAlxleg");
+	this.shape_1.setTransform(207,220.55);
+
+	var maskedShapeInstanceList = [this.shape_1];
+
+	for(var shapedInstanceItr = 0; shapedInstanceItr < maskedShapeInstanceList.length; shapedInstanceItr++) {
+		maskedShapeInstanceList[shapedInstanceItr].mask = mask;
+	}
+
+	this.timeline.addTween(cjs.Tween.get(this.shape_1).wait(1));
+
+	// Gradient
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.rf(["rgba(0,0,0,0.498)","rgba(0,0,0,0)"],[0,0.882],0,0,0,0,0,110.6).s().p("At6NNQlxldAAnwQAAnvFxleQFxldIJAAQIKAAFxFdQFxFeAAHvQAAHwlxFdQlxFeoKAAQoJAAlxleg");
+	this.shape_2.setTransform(117,220.55);
+
+	var maskedShapeInstanceList = [this.shape_2];
+
+	for(var shapedInstanceItr = 0; shapedInstanceItr < maskedShapeInstanceList.length; shapedInstanceItr++) {
+		maskedShapeInstanceList[shapedInstanceItr].mask = mask;
+	}
+
+	this.timeline.addTween(cjs.Tween.get(this.shape_2).wait(1));
+
+	// Gradient
+	this.shape_3 = new cjs.Shape();
+	this.shape_3.graphics.rf(["rgba(0,0,0,0.498)","rgba(0,0,0,0)"],[0,0.882],0,0,0,0,0,110.6).s().p("At6NNQlxldAAnwQAAnvFxleQFxldIJAAQIKAAFxFdQFxFeAAHvQAAHwlxFdQlxFeoKAAQoJAAlxleg");
+	this.shape_3.setTransform(37,220.55);
+
+	var maskedShapeInstanceList = [this.shape_3];
+
+	for(var shapedInstanceItr = 0; shapedInstanceItr < maskedShapeInstanceList.length; shapedInstanceItr++) {
+		maskedShapeInstanceList[shapedInstanceItr].mask = mask;
+	}
+
+	this.timeline.addTween(cjs.Tween.get(this.shape_3).wait(1));
+
+	// Photo_new
+	this.instance_2 = new lib.Pic3new();
+
+	var maskedShapeInstanceList = [this.instance_2];
+
+	for(var shapedInstanceItr = 0; shapedInstanceItr < maskedShapeInstanceList.length; shapedInstanceItr++) {
+		maskedShapeInstanceList[shapedInstanceItr].mask = mask;
+	}
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(1));
 
@@ -527,7 +591,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_1.png", id:"index_atlas_1"}
+		{src:"images/index_atlas_1.png?1726691735553", id:"index_atlas_1"}
 	],
 	preloads: []
 };

@@ -27,7 +27,7 @@ lib.ssMetadata = [
 
 
 
-(lib.Pic1 = function() {
+(lib.Bitmap5 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
@@ -58,7 +58,7 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(3,6.4,196.4,22.799999999999997);
 
 
-(lib.g_txt02AD3new = function(mode,startPosition,loop,reversed) {
+(lib.g_txt02AD3 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -96,7 +96,7 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(53,-1.2,489.29999999999995,58.900000000000006);
 
 
-(lib.g_txt01AD1New = function(mode,startPosition,loop,reversed) {
+(lib.g_txt01AD_1_3 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -172,7 +172,7 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(0,0,38,38);
 
 
-(lib.btn_CTA = function(mode,startPosition,loop,reversed) {
+(lib.btn_CTA_AD_123 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -275,7 +275,7 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(-1,-1,222,43);
 
 
-(lib.gpic1 = function(mode,startPosition,loop,reversed) {
+(lib.gpic3 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -288,10 +288,10 @@ if (reversed == null) { reversed = false; }
 
 	// Arrow
 	this.instance = new lib.g_arrow("synched",0);
-	this.instance.setTransform(695.05,12,1,1,180,0,0,26,26);
+	this.instance.setTransform(693.05,14,1,1,180,0,0,26,26);
 
 	this.instance_1 = new lib.g_arrow("synched",0);
-	this.instance_1.setTransform(444,78,1,1,0,0,0,26,26);
+	this.instance_1.setTransform(448,77,1,1,0,0,0,26,26);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(1));
 
@@ -302,8 +302,8 @@ if (reversed == null) { reversed = false; }
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
 
-	// Photo
-	this.instance_2 = new lib.Pic1();
+	// Photo_new
+	this.instance_2 = new lib.Bitmap5();
 	this.instance_2.setTransform(410,0);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(1));
@@ -363,12 +363,12 @@ if (reversed == null) { reversed = false; }
 
 	this.timeline.addTween(cjs.Tween.get(mask).to({graphics:null,x:0,y:0}).wait(79).to({graphics:mask_graphics_79,x:733,y:45}).wait(1).to({graphics:mask_graphics_80,x:701.625,y:45}).wait(1).to({graphics:mask_graphics_81,x:671.625,y:45}).wait(1).to({graphics:mask_graphics_82,x:643.025,y:45}).wait(1).to({graphics:mask_graphics_83,x:615.8,y:45}).wait(1).to({graphics:mask_graphics_84,x:590,y:45}).wait(1).to({graphics:mask_graphics_85,x:565.6,y:45}).wait(1).to({graphics:mask_graphics_86,x:542.575,y:45}).wait(1).to({graphics:mask_graphics_87,x:520.95,y:45}).wait(1).to({graphics:mask_graphics_88,x:500.7,y:45}).wait(1).to({graphics:mask_graphics_89,x:481.9,y:45}).wait(1).to({graphics:mask_graphics_90,x:464.425,y:45}).wait(1).to({graphics:mask_graphics_91,x:448.4,y:45}).wait(1).to({graphics:mask_graphics_92,x:433.75,y:45}).wait(1).to({graphics:mask_graphics_93,x:420.5,y:45}).wait(1).to({graphics:mask_graphics_94,x:408.65,y:45}).wait(1).to({graphics:mask_graphics_95,x:398.2,y:45}).wait(1).to({graphics:mask_graphics_96,x:389.125,y:45}).wait(1).to({graphics:mask_graphics_97,x:381.425,y:45}).wait(1).to({graphics:mask_graphics_98,x:375.15,y:45}).wait(1).to({graphics:mask_graphics_99,x:370.275,y:45}).wait(1).to({graphics:mask_graphics_100,x:366.8,y:45}).wait(1).to({graphics:mask_graphics_101,x:364.7,y:45}).wait(1).to({graphics:mask_graphics_102,x:364,y:45}).wait(252));
 
-	// Btn
-	this.instance_1 = new lib.btn_CTA();
+	// Btn_AD_123
+	this.instance_1 = new lib.btn_CTA_AD_123();
 	this.instance_1.setTransform(503.55,49.3,1,1,0,0,0,83,25.5);
 	this.instance_1.alpha = 0;
 	this.instance_1._off = true;
-	new cjs.ButtonHelper(this.instance_1, 0, 1, 2, false, new lib.btn_CTA(), 3);
+	new cjs.ButtonHelper(this.instance_1, 0, 1, 2, false, new lib.btn_CTA_AD_123(), 3);
 
 	var maskedShapeInstanceList = [this.instance_1];
 
@@ -378,7 +378,7 @@ if (reversed == null) { reversed = false; }
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(258).to({_off:false},0).to({x:513.55,alpha:1},22,cjs.Ease.get(0.9)).wait(74));
 
-	// text_03_AD_123
+	// text_03_AD_1234
 	this.instance_2 = new lib.g_txt03AD123("synched",0);
 	this.instance_2.setTransform(163.75,30.1);
 	this.instance_2.alpha = 0;
@@ -393,7 +393,7 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(210).to({_off:false},0).to({alpha:1},28,cjs.Ease.get(1)).wait(116));
 
 	// text_02__Ad03
-	this.instance_3 = new lib.g_txt02AD3new("synched",0);
+	this.instance_3 = new lib.g_txt02AD3("synched",0);
 	this.instance_3.setTransform(-614.4,46,1,1,0,0,0,-66.5,28);
 	this.instance_3._off = true;
 
@@ -511,7 +511,7 @@ if (reversed == null) { reversed = false; }
 	mask_1.setTransform(205,45);
 
 	// Text_01___AD_1_3
-	this.instance_4 = new lib.g_txt01AD1New("synched",0);
+	this.instance_4 = new lib.g_txt01AD_1_3("synched",0);
 	this.instance_4.setTransform(797.45,58.75,1,1,0,0,0,-66.5,28);
 	this.instance_4._off = true;
 
@@ -523,8 +523,8 @@ if (reversed == null) { reversed = false; }
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(11).to({_off:false},0).to({x:333.5},21,cjs.Ease.get(1)).to({_off:true},72).wait(250));
 
-	// Photo_AD3_old1
-	this.instance_5 = new lib.gpic1("single",0);
+	// Photo_AD3
+	this.instance_5 = new lib.gpic3("single",0);
 	var instance_5Filter_1 = new cjs.ColorFilter(1,1,1,1,255,255,255,0);
 	this.instance_5.filters = [instance_5Filter_1];
 	this.instance_5.cache(-2,-2,732,94);
@@ -548,7 +548,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_1.png", id:"index_atlas_1"}
+		{src:"images/index_atlas_1.png?1726692361591", id:"index_atlas_1"}
 	],
 	preloads: []
 };

@@ -58,7 +58,7 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(3.1,7,222,25.799999999999997);
 
 
-(lib.g_txt02AD3_new = function(mode,startPosition,loop,reversed) {
+(lib.g_txt02AD4_new = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -332,7 +332,7 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(210).to({_off:false},0).to({alpha:1},28,cjs.Ease.get(1)).wait(116));
 
 	// text_02_new_Ad04
-	this.instance_3 = new lib.g_txt02AD3_new("synched",0);
+	this.instance_3 = new lib.g_txt02AD4_new("synched",0);
 	this.instance_3.setTransform(-313.45,68.5,1,1,0,0,0,-66.5,28);
 	this.instance_3._off = true;
 
@@ -475,7 +475,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_1.png", id:"index_atlas_1"}
+		{src:"images/index_atlas_1.png?1726691991452", id:"index_atlas_1"}
 	],
 	preloads: []
 };
