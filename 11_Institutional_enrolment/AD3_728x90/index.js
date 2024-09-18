@@ -291,7 +291,7 @@ if (reversed == null) { reversed = false; }
 	this.instance.setTransform(693.05,14,1,1,180,0,0,26,26);
 
 	this.instance_1 = new lib.g_arrow("synched",0);
-	this.instance_1.setTransform(448,77,1,1,0,0,0,26,26);
+	this.instance_1.setTransform(520,77,1,1,0,0,0,26,26);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(1));
 
@@ -548,7 +548,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1726692361591", id:"index_atlas_1"}
+		{src:"images/index_atlas_1.png?1726696626903", id:"index_atlas_1"}
 	],
 	preloads: []
 };
