@@ -27,7 +27,7 @@ lib.ssMetadata = [
 
 
 
-(lib.Pic4 = function() {
+(lib.Bitmap6 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
@@ -247,7 +247,7 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
 
 	// Photo
-	this.instance_2 = new lib.Pic4();
+	this.instance_2 = new lib.Bitmap6();
 	this.instance_2.setTransform(410,0);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(1));
@@ -492,7 +492,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_1.png", id:"index_atlas_1"}
+		{src:"images/index_atlas_1.png?1726855896171", id:"index_atlas_1"}
 	],
 	preloads: []
 };

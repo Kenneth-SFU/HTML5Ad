@@ -27,7 +27,7 @@ lib.ssMetadata = [
 
 
 
-(lib.Pic4 = function() {
+(lib.Bitmap8 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
@@ -243,8 +243,53 @@ if (reversed == null) { reversed = false; }
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(1));
 
+	// Mask (mask)
+	var mask = new cjs.Shape();
+	mask._off = true;
+	mask.graphics.p("A3bTiMAAAgnDMAu3AAAMAAAAnDg");
+	mask.setTransform(150,125);
+
+	// Gradient_copy_copy
+	this.shape = new cjs.Shape();
+	this.shape.graphics.rf(["rgba(0,0,0,0.498)","rgba(0,0,0,0)"],[0.255,0.953],-0.1,-0.1,0,-0.1,-0.1,64.9).s().p("Am2F+Qi1ifAAjfQAAjfC1ieQC2ieEAAAQEBAAC0CeQC3CeAADfQAADfi3CfQi0CekBAAQkAAAi2ieg");
+	this.shape.setTransform(101,216.95);
+
+	var maskedShapeInstanceList = [this.shape];
+
+	for(var shapedInstanceItr = 0; shapedInstanceItr < maskedShapeInstanceList.length; shapedInstanceItr++) {
+		maskedShapeInstanceList[shapedInstanceItr].mask = mask;
+	}
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	// Gradient_copy
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.rf(["rgba(0,0,0,0.4)","rgba(0,0,0,0)"],[0.075,0.953],-0.1,-0.1,0,-0.1,-0.1,64.9).s().p("Am2F+Qi1ieAAjgQAAjfC1ieQC2ieEAAAQEBAAC1CeQC2CeAADfQAADgi2CeQi1CekBAAQkAAAi2ieg");
+	this.shape_1.setTransform(182.6,204.05);
+
+	var maskedShapeInstanceList = [this.shape_1];
+
+	for(var shapedInstanceItr = 0; shapedInstanceItr < maskedShapeInstanceList.length; shapedInstanceItr++) {
+		maskedShapeInstanceList[shapedInstanceItr].mask = mask;
+	}
+
+	this.timeline.addTween(cjs.Tween.get(this.shape_1).wait(1));
+
+	// Gradient
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.rf(["rgba(0,0,0,0.498)","rgba(0,0,0,0)"],[0.255,0.953],0,0,0,0,0,97.3).s().p("AqSKRQkPkPAAmCQAAmAEPkSQERkPGBAAQGCAAEPEPQERESAAGAQAAGCkREPQkPERmCAAQmBAAkRkRg");
+	this.shape_2.setTransform(10.5,225);
+
+	var maskedShapeInstanceList = [this.shape_2];
+
+	for(var shapedInstanceItr = 0; shapedInstanceItr < maskedShapeInstanceList.length; shapedInstanceItr++) {
+		maskedShapeInstanceList[shapedInstanceItr].mask = mask;
+	}
+
+	this.timeline.addTween(cjs.Tween.get(this.shape_2).wait(1));
+
 	// Photo
-	this.instance_2 = new lib.Pic4();
+	this.instance_2 = new lib.Bitmap8();
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(1));
 
@@ -475,7 +520,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1726691991452", id:"index_atlas_1"}
+		{src:"images/index_atlas_1.png?1726856821308", id:"index_atlas_1"}
 	],
 	preloads: []
 };
