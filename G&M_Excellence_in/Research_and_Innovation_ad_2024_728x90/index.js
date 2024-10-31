@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_1", frames: [[0,0,318,90]]}
+		{name:"index_atlas_1", frames: [[0,0,636,180]]}
 ];
 
 
@@ -27,7 +27,7 @@ lib.ssMetadata = [
 
 
 
-(lib.Bitmap8 = function() {
+(lib.Bitmap10 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
@@ -192,8 +192,8 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(1));
 
 	// Photo_new
-	this.instance_2 = new lib.Bitmap8();
-	this.instance_2.setTransform(410,0);
+	this.instance_2 = new lib.Bitmap10();
+	this.instance_2.setTransform(410,0,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(1));
 
@@ -329,7 +329,7 @@ if (reversed == null) { reversed = false; }
 
 	// Btn_AD_123
 	this.instance_1 = new lib.btn_CTA_AD_123();
-	this.instance_1.setTransform(217.55,44.3,1,1,0,0,0,83,25.5);
+	this.instance_1.setTransform(217.55,41.8,1,1,0,0,0,83,25.5);
 	this.instance_1.alpha = 0;
 	this.instance_1._off = true;
 	new cjs.ButtonHelper(this.instance_1, 0, 1, 2, false, new lib.btn_CTA_AD_123(), 3);
@@ -377,7 +377,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1730398896902", id:"index_atlas_1"}
+		{src:"images/index_atlas_1.png?1730407587000", id:"index_atlas_1"}
 	],
 	preloads: []
 };
