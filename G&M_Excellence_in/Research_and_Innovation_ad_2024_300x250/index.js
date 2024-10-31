@@ -27,7 +27,7 @@ lib.ssMetadata = [
 
 
 
-(lib.Bitmap11 = function() {
+(lib.Pic1New = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
@@ -202,10 +202,10 @@ if (reversed == null) { reversed = false; }
 	mask.setTransform(150,125);
 
 	// Photo_new
-	this.instance_2 = new lib.Bitmap11();
+	this.instance_2 = new lib.Pic1New();
 	this.instance_2.setTransform(0,14,0.5,0.5,0,180,0);
 
-	this.instance_3 = new lib.Bitmap11();
+	this.instance_3 = new lib.Pic1New();
 	this.instance_3.setTransform(0,11,0.5,0.5);
 
 	var maskedShapeInstanceList = [this.instance_2,this.instance_3];
@@ -412,7 +412,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1730407896708", id:"index_atlas_1"}
+		{src:"images/index_atlas_1.png?1730408963501", id:"index_atlas_1"}
 	],
 	preloads: []
 };
