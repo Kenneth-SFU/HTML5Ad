@@ -163,7 +163,11 @@ if (reversed == null) { reversed = false; }
 	this.shape_5.graphics.f().s("#FFFFFF").ss(1,1,1).p("APoDNI/PAAIAAmZIfPAAg");
 	this.shape_5.setTransform(100,20.475);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_4,p:{x:99.9915}}]}).to({state:[{t:this.shape_5}]},1).to({state:[{t:this.shape_4,p:{x:99.9415}}]},1).wait(2));
+	this.shape_6 = new cjs.Shape();
+	this.shape_6.graphics.f("#CC0633").s().p("AvnDNIAAmZIfPAAIAAGZg");
+	this.shape_6.setTransform(100,20.475);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_4,p:{x:99.9915}}]}).to({state:[{t:this.shape_6},{t:this.shape_5}]},1).to({state:[{t:this.shape_4,p:{x:99.9415}}]},1).wait(2));
 
 	this._renderFirstFrame();
 
@@ -343,7 +347,7 @@ if (reversed == null) { reversed = false; }
 
 	// Btn__1_2_3
 	this.instance_1 = new lib.btn_CTA_AD_123();
-	this.instance_1.setTransform(70.5,224.3,1,1,0,0,0,83,25.5);
+	this.instance_1.setTransform(90.5,224.3,1,1,0,0,0,83,25.5);
 	this.instance_1.alpha = 0;
 	this.instance_1._off = true;
 	new cjs.ButtonHelper(this.instance_1, 0, 1, 2, false, new lib.btn_CTA_AD_123(), 3);
@@ -354,7 +358,7 @@ if (reversed == null) { reversed = false; }
 		maskedShapeInstanceList[shapedInstanceItr].mask = mask;
 	}
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(148).to({_off:false},0).to({x:91.5,alpha:1},22,cjs.Ease.get(0.9)).wait(97));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(148).to({_off:false},0).to({x:109,alpha:1},22,cjs.Ease.get(0.9)).wait(97));
 
 	// Photo_new_AD01
 	this.instance_2 = new lib.gpic1("single",0);
@@ -408,7 +412,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1730328730195", id:"index_atlas_1"}
+		{src:"images/index_atlas_1.png?1730396729881", id:"index_atlas_1"}
 	],
 	preloads: []
 };
