@@ -439,9 +439,6 @@ if (reversed == null) { reversed = false; }
 	this.instance_2 = new lib.g_txt02("synched",0);
 	this.instance_2.setTransform(23.55,75.5);
 	this.instance_2._off = true;
-	var instance_2Filter_1 = new cjs.ColorFilter(1,1,1,1,0,0,0,0);
-	this.instance_2.filters = [instance_2Filter_1];
-	this.instance_2.cache(-2,-2,263,114);
 
 	var maskedShapeInstanceList = [this.instance_2];
 
@@ -449,8 +446,7 @@ if (reversed == null) { reversed = false; }
 		maskedShapeInstanceList[shapedInstanceItr].mask = mask;
 	}
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(110).to({_off:false},0).wait(110).to({startPosition:0},0).to({x:18.55},30,cjs.Ease.quadInOut).to({_off:true},132).wait(1));
-	this.timeline.addTween(cjs.Tween.get(instance_2Filter_1).wait(220).to(new cjs.ColorFilter(1,1,1,1,0,0,0,0), 0).to(new cjs.ColorFilter(0,0,0,1,204,6,51,0), 30,cjs.Ease.quadInOut).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(110).to({_off:false},0).wait(110).to({startPosition:0},0).to({x:18.55,alpha:0},30,cjs.Ease.quadInOut).to({_off:true},132).wait(1));
 
 	// Red
 	this.shape = new cjs.Shape();
@@ -727,10 +723,6 @@ if (reversed == null) { reversed = false; }
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(383));
 
-	this.filterCacheList = [];
-	this.filterCacheList.push({instance: this.instance_2, startFrame:110, endFrame:110, x:-2, y:-2, w:263, h:114});
-	this.filterCacheList.push({instance: this.instance_2, startFrame:220, endFrame:220, x:-2, y:-2, w:263, h:114});
-	this.filterCacheList.push({instance: this.instance_2, startFrame:221, endFrame:250, x:-2, y:-2, w:263, h:114});
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
@@ -744,7 +736,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Photo.png?1760135945852", id:"Photo"}
+		{src:"images/Photo.png?1760138153331", id:"Photo"}
 	],
 	preloads: []
 };
