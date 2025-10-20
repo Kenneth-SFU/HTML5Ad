@@ -43,9 +43,9 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Text
-	this.text = new cjs.Text("Learn how we're \nbuilding a better future, one breakthrough \nat a time.", "22px 'Lava FNI'", "#FFFFFF");
-	this.text.lineHeight = 26;
-	this.text.lineWidth = 255;
+	this.text = new cjs.Text("Learn how we're \nbuilding a better future, one breakthrough at a time.", "20px 'Lava FNI'", "#FFFFFF");
+	this.text.lineHeight = 24;
+	this.text.lineWidth = 251;
 	this.text.parent = this;
 	this.text.setTransform(2,2);
 
@@ -54,7 +54,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,0,258.5,109.6);
+p.nominalBounds = new cjs.Rectangle(0,0,255,109.6);
 
 
 (lib.g_txt01 = function(mode,startPosition,loop,reversed) {
@@ -490,7 +490,7 @@ if (reversed == null) { reversed = false; }
 
 	// g_txt_02
 	this.instance_1 = new lib.g_txt02("synched",0);
-	this.instance_1.setTransform(33.55,420.5);
+	this.instance_1.setTransform(33.55,430.5);
 	this.instance_1.alpha = 0;
 	this.instance_1._off = true;
 
@@ -551,7 +551,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Photo.jpg?1760741114389", id:"Photo"}
+		{src:"images/Photo.jpg?1760990986975", id:"Photo"}
 	],
 	preloads: []
 };
