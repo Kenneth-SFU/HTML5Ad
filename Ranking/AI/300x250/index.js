@@ -28,7 +28,7 @@ lib.ssMetadata = [];
 (lib.Photo = function() {
 	this.initialize(img.Photo);
 }).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,300,170);
+p.nominalBounds = new cjs.Rectangle(0,0,600,340);
 
 
 (lib.g_txt02 = function(mode,startPosition,loop,reversed) {
@@ -798,7 +798,7 @@ if (reversed == null) { reversed = false; }
 
 	// Photo
 	this.instance_4 = new lib.Photo();
-	this.instance_4.setTransform(0,80);
+	this.instance_4.setTransform(0,80,0.5,0.5);
 
 	var maskedShapeInstanceList = [this.instance_4];
 
@@ -821,7 +821,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Photo.jpg?1760991138457", id:"Photo"}
+		{src:"images/Photo.jpg?1761065668770", id:"Photo"}
 	],
 	preloads: []
 };

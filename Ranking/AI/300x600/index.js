@@ -28,7 +28,7 @@ lib.ssMetadata = [];
 (lib.Photo = function() {
 	this.initialize(img.Photo);
 }).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,300,300);
+p.nominalBounds = new cjs.Rectangle(0,0,600,600);
 
 
 (lib.g_txt02 = function(mode,startPosition,loop,reversed) {
@@ -522,6 +522,7 @@ if (reversed == null) { reversed = false; }
 
 	// Photo
 	this.instance_3 = new lib.Photo();
+	this.instance_3.setTransform(0,0,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(400));
 
@@ -551,7 +552,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Photo.jpg?1760990986975", id:"Photo"}
+		{src:"images/Photo.jpg?1761066222117", id:"Photo"}
 	],
 	preloads: []
 };
