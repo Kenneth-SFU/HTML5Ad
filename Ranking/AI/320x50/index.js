@@ -420,7 +420,7 @@ if (reversed == null) { reversed = false; }
 
 	// g_txt_01
 	this.instance_2 = new lib.g_txt01("synched",0);
-	this.instance_2.setTransform(498,10.6,0.481,0.481,0,0,0,0.1,0);
+	this.instance_2.setTransform(534,10.6,0.481,0.481,0,0,0,0.1,0);
 
 	var maskedShapeInstanceList = [this.instance_2];
 
@@ -428,7 +428,7 @@ if (reversed == null) { reversed = false; }
 		maskedShapeInstanceList[shapedInstanceItr].mask = mask_1;
 	}
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).to({regX:0.3,regY:0.2,x:320.8},28,cjs.Ease.quadInOut).wait(64).to({regX:0.1,regY:0},0).to({x:521.35},29,cjs.Ease.quadInOut).to({_off:true},1).wait(235).to({_off:false},0).to({x:320.8},28,cjs.Ease.quadInOut).wait(15));
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).to({regX:0.3,regY:0.2,x:320.8},28,cjs.Ease.quadInOut).wait(64).to({regX:0.1,regY:0},0).to({x:537.35},29,cjs.Ease.quadInOut).to({_off:true},1).wait(235).to({_off:false},0).to({x:320.8},28,cjs.Ease.quadInOut).wait(15));
 
 	// Logo
 	this.instance_3 = new lib.g_SFULogo("synched",0);
