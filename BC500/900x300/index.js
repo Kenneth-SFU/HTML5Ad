@@ -43,18 +43,18 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Text
-	this.text = new cjs.Text("Learn how we’re driving \ninnovation and growth in AI, \nquantum and more.", "30px 'Lava FNI'", "#FFFFFF");
-	this.text.lineHeight = 36;
+	this.text = new cjs.Text("Learn how we’re driving \ninnovation and growth in \nAI, quantum and more.", "25px 'Lava FNI'", "#FFFFFF");
+	this.text.lineHeight = 30;
 	this.text.lineWidth = 425;
 	this.text.parent = this;
-	this.text.setTransform(2,2);
+	this.text.setTransform(93.2,2);
 
 	this.timeline.addTween(cjs.Tween.get(this.text).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,0,428.6,157.6);
+p.nominalBounds = new cjs.Rectangle(91.2,0,428.59999999999997,157.6);
 
 
 (lib.g_txt01 = function(mode,startPosition,loop,reversed) {
@@ -528,7 +528,7 @@ if (reversed == null) { reversed = false; }
 
 	// Connect_to_Excellence
 	this.instance_2 = new lib.g_txt_connect_to_excellence("synched",0);
-	this.instance_2.setTransform(509.55,107.4,1.3499,1.3499,0,0,0,0,0.1);
+	this.instance_2.setTransform(594.55,107.4,1.3499,1.3499,0,0,0,0,0.1);
 	this.instance_2.alpha = 0;
 	this.instance_2._off = true;
 
@@ -538,7 +538,7 @@ if (reversed == null) { reversed = false; }
 		maskedShapeInstanceList[shapedInstanceItr].mask = mask_1;
 	}
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(230).to({_off:false},0).to({regX:0.2,regY:0.2,x:500.35,alpha:1},30,cjs.Ease.quadInOut).wait(80).to({regX:0.1,regY:0.1,x:500.3},0).to({x:491.15,alpha:0},31,cjs.Ease.quadInOut).to({_off:true},1).wait(28));
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(230).to({_off:false},0).to({regX:0.2,regY:0.2,x:585.35,alpha:1},30,cjs.Ease.quadInOut).wait(80).to({regX:0.1,regY:0.1,x:585.3},0).to({x:576.15,alpha:0},31,cjs.Ease.quadInOut).to({_off:true},1).wait(28));
 
 	// g_txt_02
 	this.instance_3 = new lib.g_txt02("synched",0);
@@ -587,7 +587,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Photo.jpg?1779396399300", id:"Photo"}
+		{src:"images/Photo.jpg?1779468313072", id:"Photo"}
 	],
 	preloads: []
 };

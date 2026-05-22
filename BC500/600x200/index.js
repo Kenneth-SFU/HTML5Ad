@@ -43,18 +43,18 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Text
-	this.text = new cjs.Text("Learn how we’re driving \ninnovation and growth in AI, \nquantum and more.", "30px 'Lava FNI'", "#FFFFFF");
-	this.text.lineHeight = 36;
+	this.text = new cjs.Text("Learn how we’re driving \ninnovation and growth in \nAI, quantum and more.", "25px 'Lava FNI'", "#FFFFFF");
+	this.text.lineHeight = 30;
 	this.text.lineWidth = 425;
 	this.text.parent = this;
-	this.text.setTransform(2,2);
+	this.text.setTransform(92.4,2);
 
 	this.timeline.addTween(cjs.Tween.get(this.text).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,0,428.6,157.6);
+p.nominalBounds = new cjs.Rectangle(90.4,0,428.6,157.6);
 
 
 (lib.g_txt01 = function(mode,startPosition,loop,reversed) {
@@ -528,7 +528,7 @@ if (reversed == null) { reversed = false; }
 
 	// Connect_to_Excellence
 	this.instance_2 = new lib.g_txt_connect_to_excellence("synched",0);
-	this.instance_2.setTransform(339.7,71.6,0.9,0.9,0,0,0,0,0.1);
+	this.instance_2.setTransform(396.7,71.6,0.9,0.9,0,0,0,0,0.1);
 	this.instance_2.alpha = 0;
 	this.instance_2._off = true;
 
@@ -538,7 +538,7 @@ if (reversed == null) { reversed = false; }
 		maskedShapeInstanceList[shapedInstanceItr].mask = mask_1;
 	}
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(230).to({_off:false},0).to({regX:0.2,x:333.6,y:71.55,alpha:1},30,cjs.Ease.quadInOut).wait(80).to({regX:0.1,x:333.55,y:71.6},0).to({regX:0,x:327.35,alpha:0},31,cjs.Ease.quadInOut).to({_off:true},1).wait(28));
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(230).to({_off:false},0).to({regX:0.2,x:390.6,y:71.55,alpha:1},30,cjs.Ease.quadInOut).wait(80).to({regX:0.1,x:390.55,y:71.6},0).to({regX:0,x:384.35,alpha:0},31,cjs.Ease.quadInOut).to({_off:true},1).wait(28));
 
 	// g_txt_02
 	this.instance_3 = new lib.g_txt02("synched",0);
@@ -587,7 +587,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Photo.jpg?1779381950428", id:"Photo"}
+		{src:"images/Photo.jpg?1779468357245", id:"Photo"}
 	],
 	preloads: []
 };
