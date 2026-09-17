@@ -540,7 +540,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Photo.jpg?1789599969746", id:"Photo"}
+		{src:"images/Photo.jpg?1789677608806", id:"Photo"}
 	],
 	preloads: []
 };
