@@ -43,7 +43,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Text
-	this.text = new cjs.Text("Learn how we are empowering students \nto thrive in an \nAI-informed world.", "20px 'Lava FNI'", "#FFFFFF");
+	this.text = new cjs.Text("Learn how we are \nempowering students \nto thrive in an \nAI-informed world.", "20px 'Lava FNI'", "#FFFFFF");
 	this.text.lineHeight = 24;
 	this.text.lineWidth = 251;
 	this.text.parent = this;
@@ -540,7 +540,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Photo.jpg?1789677608806", id:"Photo"}
+		{src:"images/Photo.jpg?1789746456053", id:"Photo"}
 	],
 	preloads: []
 };

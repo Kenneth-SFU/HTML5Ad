@@ -43,7 +43,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Text
-	this.text = new cjs.Text("Learn how we are empowering students \nto thrive in an \nAI-informed world.", "20px 'Lava FNI'", "#FFFFFF");
+	this.text = new cjs.Text("Learn how we are \nempowering students \nto thrive in an \nAI-informed world.", "20px 'Lava FNI'", "#FFFFFF");
 	this.text.lineHeight = 24;
 	this.text.lineWidth = 251;
 	this.text.parent = this;
@@ -54,7 +54,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,0,255.1,109);
+p.nominalBounds = new cjs.Rectangle(0,0,255.1,124);
 
 
 (lib.g_txt01 = function(mode,startPosition,loop,reversed) {
@@ -809,7 +809,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Photo.jpg?1789677556607", id:"Photo"}
+		{src:"images/Photo.jpg?1789746352702", id:"Photo"}
 	],
 	preloads: []
 };
